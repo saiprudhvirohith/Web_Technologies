@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan in Table Tags 1</title>
+</head>
+<style>
+    td{
+        border:2px solid black ;
+    }
+</style>
+<body>
+    <table border="2px" cellpadding="10px" cellspacing="10px" rules="all" style="background-color: rgb(218, 152, 65); color:red;">
+        <tr>
+            <td rowspan="2">sql</td>
+            <td>java</td>
+            <td>web</td>
+            <td>mt</td>
+        </tr>
+        <tr>
+            <td>advance</td>
+            <td rowspan="5">spring</td>
+            <td>st</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>30</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td rowspan="3">project</td>
+            <td>2</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td rowspan="2">job</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>
