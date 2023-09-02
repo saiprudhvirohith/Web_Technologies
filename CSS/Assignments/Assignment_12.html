@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    legend{
+        background-color: aqua;
+        text-align: center;
+    }
+    fieldset{
+        width: 500px;
+        height: 500px;
+        background-color: brown;
+    }
+    #a{
+        width: 250px;
+        height: 250px;
+        background-image: url(../Images/Forest.jpg);
+        background-size: 250px;
+        background-repeat: no-repeat;
+        float: left;
+        visibility: hidden;
+    }
+    #b{
+        width: 250px;
+        height: 250px;
+        float: left;
+        text-align:justify ;
+        visibility: hidden;
+    }
+    #s{
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        background-image: url(../Images/Forest.jpg);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        margin-left: 40px;
+    }
+    div{
+        margin-top: 100px;
+    }
+    fieldset:hover  #a{
+        visibility: visible;
+        
+    }
+    fieldset:hover  #b{
+        visibility: visible;
+    }
+    fieldset:hover  #s{
+        visibility: hidden;
+    }
+
+    
+</style>
+<body>
+   <fieldset>
+    <legend>CHURCH</legend>
+    <div id="s"></div>
+    <div id="a"></div>
+    <div id="b" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Iste deserunt ullam maxime laboriosam nobis magnam dignissimos 
+        pariatur nemo rerum earum beatae, ex fuga voluptatum, odio ab? 
+        Possimus a totam sunt.
+   </div>
+   </fieldset>
+    
+</body>
+</html>
