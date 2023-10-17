@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function* gen(){
+        yield 1;
+        yield 2;
+        yield 3;
+     }  
+     var res=gen(); 
+     //console.log(res);
+     console.log(res.next().value);
+     console.log(res.next().value);
+     console.log(res.next().value);
+     //////////////////////////////
+     console.log(gen().next().value);
+     console.log(gen().next().value);
+
+
+    //Array DataType
+    //!1 Using array literals
+    var x=[12,"js",null,23.98,true]
+    document.write(x);
+    console.log(x);
+
+    //!2 using new keyword
+    var food=new Array();
+    food[0]="idly"
+    food[1]="dosa"
+    food[2]='puri'
+    food[4]="water"
+    console.log(food);
+
+    //!3 Using Constructor
+    var Fruit=new Array("Apple","Mango","orange","Banana","Lemon");
+    console.log(Fruit);
+
+    for (let i=0;i<Fruit.length;i++){
+        console.log(Fruit[i])
+
+    }
+
+    //! Array Methods
+    //1 concat method
+    console.log(Fruit);
+    var y=["Cherry","Starberry"]
+    console.log(y)
+    var z=["Grapes","Pineapple"]
+    console.log(z)
+    console.log(Fruit.concat(y))
+    console.log(Fruit.concat(y,z))
+
+    //2 push method:- It add one or more elements to the end of the array.
+    console.log(Fruit);
+    Fruit.push("Cherry","Grapes")
+    console.log(Fruit)
+
+    //3 unshift method:- It add one or more elements in the beginnibg of the array.
+    console.log(Fruit);
+    Fruit.unshift("Pineapple","Starberry")
+    console.log(Fruit);
+
+    //4 pop method:- It remove and return the last element in the array.
+    console.log(Fruit);
+    Fruit.pop()
+    console.log(Fruit);
+    </script>
+</body>
+</html>
