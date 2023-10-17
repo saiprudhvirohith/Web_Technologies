@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calsum(p,m,c){
+            return p+m+c
+        }
+    var x=calsum(50,90,100)
+
+
+    calper(x)
+    function calper(sum){
+        console.log(sum);
+        per=sum/300.0*100.0
+        document.write(per)
+    }
+
+
+    // !Arrow Function
+    // Syntax:
+    ///var varName=()=>{statements}
+    //1
+    var x=()=>{document.write("Good Moring")}
+    console.log(x())
+
+    //2
+    var x=_=>{document.write("Hello World")}
+    x();
+
+    //3
+    var x=(name1)=>{document.write(name1+"<br>")}
+    x("Prudhvi")
+    x("Rohith")
+
+    //!
+    var x=name1=>document.write(name1+"<br>")
+    x("Sai")
+
+    //4
+    var x=sub=>{return sub;}
+    document.write(x("JS"))
+
+    //!
+    var x=sub=>sub;
+    document.write(x("React JS"))
+
+    </script>
+</body>
+</html>

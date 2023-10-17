@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //! Call Back Function:- A function passing as argument in a function 
+        /*function display(subject){
+            return subject;
+        }  
+        var x=display(function(){
+            return "Angular JS"
+        })
+        //console.log(x())
+        var z=x();
+        console.log(z)*/
+
+        //! Higher Order Function:- A function paaing as an paramter 
+        /*function display1(sub){
+            console.log(sub);
+        }
+        display1(function(){
+            return "JS"
+        })
+        
+        function display2(name){
+            console.log(name);
+        }
+        display2(function(){
+            return "Prudhvi"
+        })*/
+
+        // ! IIF (Immediate Invoking Function)
+        // A function which is called immdialely as soon as function declaration.
+        (function(a){
+            console.log(a);
+            console.log("Hello World");
+        }) 
+        (10);
+
+        function sum(){
+            return function(){
+                return "JS";
+            }
+        }
+        var x=sum()
+        console.log(x());
+
+        // Nested Function
+        /*function parent(){
+            let a=10;
+            function child(){
+                let b=20;
+                console.log(a+b);
+            }
+            child();
+        }
+        parent();*/
+        
+        function parent(){
+            let a=10;
+            function child(){
+                let b=20;
+                console.log(a+b);
+            }
+            return child;
+        }
+        parent()(); // JS Currying
+    </script>
+</body>
+</html>

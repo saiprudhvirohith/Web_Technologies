@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(){
+            console.log('Hello')
+        }
+        abc()
+        ////
+        //let a= function(){
+         //   console.log("Hello World")
+
+        //}
+       // a()
+        ////
+        function ABC(num){
+            console.log(num)
+            num()
+        }
+        ABC(
+            function(){
+                console.log("Welcome to Anonymous Function")
+            }
+        )
+        /////
+
+        function areaofcircle(a,b){
+            console.log(a)
+            let a=a(20)
+            console.log(a)
+            console.log(b)
+        }
+        areaofcircle(
+            function(radius){
+                const pi=3.14;
+                let areaofcircle=pi*radius*radius
+                console.log(areaofcircle)
+                return areaofcircle
+            },
+            function(length,breath){
+                let areaofrectangle=length*breath
+                console.log(areaofrectangle)
+            }
+
+        )  
+    </script>
+</body>
+</html>

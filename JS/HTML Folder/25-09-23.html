@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" onclick="f()">
+    <script>
+        function f(){
+            let x=prompt("Enter a value")
+            var i=x
+            var s=0;
+            while(i>=1){
+                let d=parseInt(i%10)
+                s=(s*10)+d
+                i/=10
+            }
+            if(x==s)
+            alert("palimdrome")
+            else
+            alert("Not palimdrome")
+            let b=confirm("Hi")
+            alert(typeof b)
+            alert(b)
+        }
+    </script>
+</body>
+</html>
