@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array methods
+        //5 Shift method:- It is used to remove and return the first element in the array.
+        var x=[5,1,3,2,4];
+        document.write(x);
+        x.shift();
+        document.write(x);
+
+        //6 Sort method
+        console.log(x);
+        console.log(x.sort());
+
+        //7 Reverse method
+        console.log(x.reverse());
+
+        // Wap to displaay biggest element in an array.
+        var x=[10,56,76,23,45,30]
+        console.log(x.sort())
+        console.log(x.pop())
+
+
+        //wap to display least element in the given array
+        var x=[10,56,76,23,45,30]
+        console.log(x.sort())
+        console.log(x.shift())
+
+        //! find method:- It returns the value of yhe first element in array that satisfies the specified condition.
+        var x=[10,56,76,23,45,30]
+        console.log(x);
+        var res=x.find(n=>n==23)
+        if (res==23){
+            console.log("23 is present in the given array");
+        }
+        else{
+            console.log("23 is not present in the given array");
+        }
+
+        //! slice Method:- It returns a new arry conataining the copy of the part of an given array.
+        var x=[10,56,76,23,45,30]
+        console.log(x);
+        console.log(x.slice(1,3));
+        console.log(x.sort())
+        console.log(x.slice(-2))
+
+        //! splice():- It add/remove elements to/form the given array.
+        //syntax:- splice(starting point,delete count,[add element])
+        var x=[10,56,76,23,45,30]
+        console.log(x)
+        //console.log(x.splice(1,3))
+        console.log(x.splice(1,0,2,3))
+        console.log(x)
+
+        // How to add and remove the elements in an array.
+        var x=[10,34,56,78,23,45]
+        console.log(x)
+        x.splice(2,2)
+        x.splice(3,0,7,21)
+        console.log(x)
+    </script>
+</body>
+</html>
