@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //! include method
+        var a=["Balu","Venkey","Shivani","Manas","Rohith"]
+        console.log(a);
+        console.log(a.includes("Manas"));
+
+        //! indexof method
+        console.log(a.indexOf("Shivani"));
+
+        //!At method: we are passing the index value. If the index value is present in arrey it will return that particular value.
+        console.log(a.at(1))
+
+        //! array.from :- It will convert the string to array.
+        var b="Tiger"
+        console.log(b);
+        console.log(typeof b);
+        var b=Array.from(b);
+        console.log(b);
+        console.log(typeof b);
+
+        //!join method
+        console.log(a);
+        var res=a.join()
+        console.log(res);
+
+
+
+        /////////////////////////////////////
+
+        // Object Datatype
+        //1.Object Literal
+        var obj={
+            id:123,
+            Name:"object",
+            company:"js"
+        }
+        console.log(obj);
+
+        //2. new keyword
+        //synatx:- var object=new object()
+        var emp=new Object();
+        emp.id=1;
+        emp.name='Prudhvi';
+        emp.sal=30000;
+        console.log(emp);
+
+        //
+        var student= new Object();
+        student.id=21;
+        student.name="Prudhvi";
+        student.branch="C.S.E";
+        student.bloodGroup="A+";
+        student.section="K";
+        student.college="Bharath University";
+        console.log(student);
+
+        //3. constructor function
+        function Emp(id,name,sal){
+            this.id=id;
+            this.name=name;
+            this.sal=sal;
+        }
+        var e=new Emp(2,"Shivani",50000)
+        console.log(e);
+        var f=new Emp(3,"Bala",45000);
+        var g=new Emp(4,"Manas",60000);
+        console.log(f);
+        console.log(g);
+        console.log(e.id+" "+e.name+" "+e.sal);
+    </script>
+    
+</body>
+</html>
