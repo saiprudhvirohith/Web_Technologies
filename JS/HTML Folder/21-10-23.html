@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //!Global Scope:A variable is declared with or without using var using outside the function scope but inside the script tag
+        //the accesability of the gobal variable anywhere but within the script tag
+        x=10
+        var x1=100
+        let x2=1000
+        const x3=10000
+        document.write(x+"<br>")
+        document.write(x1+"<br>")
+        document.write(x2+"<br>")
+        document.write(x3+"<br>")
+
+        function india(){
+            document.write(x+"<br>")
+            document.write(x1+"<br>")
+            document.write(x2+"<br>")
+            document.write(x3+"<br>")  
+        }
+        india()
+
+        //Local Scope:- A variable which is declared insised the function scope we called it as local variable
+        //local variable can be accessed only within the function scope.
+        function India(){
+            y=20
+            var y1=200
+            let y2=2000
+            const y3=20000
+            console.log(y)
+            console.log(y1)
+            console.log(y2)
+            console.log(y3)  
+        }
+        India()
+        console.log(y)//defined
+        //console.log(y1+"<br>")//is not defined
+        //console.log(y2+"<br>")//is not defined
+        //console.log(y3+"<br>")// is not defined 
+
+        //Block Scope:- A variable which is declared condition statement and looping statement we called it as a block scope
+        //Acccesability a of a block-level variable is only within the block.
+        {
+            z=30
+            var z1=300
+            let z2=3000
+            const z3=30000
+            console.log(z)
+            console.log(z1)
+            console.log(z2)
+            console.log(z3) 
+        }
+        console.log(z)//defined
+        console.log(z1)//defined
+        //console.log(z2)//is not defined
+        //console.log(z3)//is not defined
+
+        //! this keyword: it will pointing to the window object.
+        console.log(this);
+        var a=10000
+        console.log(a)
+        function add(){
+            console.log(this);
+        }
+        add()
+
+        let person={
+            name:"Prudhvi",
+            city:"Machilipatnam",
+            Pincode:521001,
+            getadd: function add(){
+                console.log(this);
+            }
+        }
+        console.log(person);
+        (person.getadd());
+
+        ///! for in loop
+        let Obj={
+            name:"Prudhvi",
+            city:"Machilipatnam",
+            Pincode:521001,
+        }
+        console.log(Obj)
+        for (let x in Obj){
+            console.log(x);
+        }
+
+
+        //! for of loop:- throught the values of any iterable object
+        let fruits=["apple","mango","orange"]
+        console.log(fruits)
+        for (let x of fruits){
+            console.log(x)
+        }
+
+        //forEach():- ForEach calls the function for each element in an array.
+         let arr=["a","b","c"]
+         console.log(arr)
+         arr.forEach((ele)=>console.log(ele));
+
+         //! How to iterate object by using for in loop
+         var emp={
+            name:"sai",
+            id:123,
+            sal:30000
+         }
+         console.log(emp);
+         for (var a in emp){
+            if (emp.hasOwnProperty(a)){
+                console.log(a+":"+emp[a])
+            }
+         }
+
+    </script>
+</body>
+</html>

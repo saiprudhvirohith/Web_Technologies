@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create Date object:UTF- 9 ways
+        //1.new Date
+        const d=new Date()
+        console.log(d)
+
+        //2.new Date(date string)
+        const d1=new Date("october 25,2023,12:15:00")
+        console.log(d1)
+
+        //3.new Date(year,month,....)
+        const d2=new Date(2001,4,6,10,30,21,0)
+        console.log(d2)
+
+
+        //! Math Object
+        //1.round
+        let x=Math.round(4.5)
+        console.log(x)
+
+        //2.trunc
+        let y=Math.trunc(4.5)
+        console.log(y)
+
+        //3.floor
+        let z=Math.floor(4.9)
+        console.log(z)
+
+        let ar=[1,2,3,4]
+        console.log(ar)
+        let res=ar.map((ele,index,ar)=>{
+            console.log(ele,index,ar)
+            return ele*ele
+        })
+        console.log(res)
+
+        //! filter
+        let arr=[1,2,3,4]
+        console.log(arr)
+        let result=arr.filter((ele,index,arr)=>{
+            console.log(ele,index,arr)
+            return ele<=5;
+        })
+        console.log(result)
+    </script>
+    
+</body>
+</html>

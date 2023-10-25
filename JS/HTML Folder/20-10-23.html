@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //!object
+        var obj={
+            id:123,
+            Name:"object",
+            company:"js",
+            address:{
+                city:"machilipatnam",
+                Pincode:521001
+            }
+        }
+        console.log(obj);
+
+        //! dot notation
+        console.log(obj.Name);
+        console.log(obj.company);
+        console.log(obj.address);
+        console.log(obj.address.city);
+
+        ////
+        console.log(Object.keys(obj));
+        console.log(Object.values(obj));
+        console.log(Object.entries(obj));
+
+        let emp={
+            name:"Sai",
+            id:1,
+            sal:45000
+        }
+        let emp1={
+            name1:"Rohith",
+            id1:2,
+            sal1:50000
+        }
+        console.log(Object.assign({},emp,emp1));
+
+        //! seal method
+        console.log(emp);
+        Object.seal(emp);
+        //console.log(emp.name)
+        emp.name="Prudhvi"
+        console.log(emp.name)
+
+        //isealed
+        console.log(Object.isSealed(emp));
+
+        //freeze method
+        console.log(emp);
+        Object.freeze(emp)
+        emp.id=21;
+        console.log(emp.id);
+        delete emp.id
+        console.log(emp.id)
+        
+        // isFrozen method
+        console.log(Object.isFrozen(emp));
+
+        //hasOwnProperty
+        console.log(emp);
+        console.log(emp.hasOwnProperty("name"));
+
+        ///////
+        //! Object literal 
+        // var obj={ // id:123, 
+            // Name:"object", 
+            // company:"js" 
+            // } 
+        // console.log(obj); 
+        // let emp={ // id:21, // name:"kumar", // sal:40000 // } // console.log(emp); //!new keyword // var names=new Object() // console.log(names); // var emp=new Object(); // emp.id=7; // emp.name="chandhu"; // emp.sal=30000; // console.log(emp); // !constructor function // function emp(id,name,sal){ // this.id=id; // this.name=name; // this.sal=sal; // } // var e=new emp(21,"vishal",35000); // var e2=new emp(31,"raji",20000); // var e3=new emp(7,"rajith",45000) // console.log(e3.id+" "+e3.name+" "+e3.sal);; // console.log(e2.id+" "+e2.name+" "+e2.sal);; // console.log(e.id+" "+e.name+" "+e.sal); //!object // var person={ // name:"john", // age:30, // address:{ // city:"bangalore", // pincode:567602 // } // }; // console.log(person); //!Bracket notation // console.log(person['name']); // console.log(person['address']['city']); //!dot notation // console.log(person.address.city); // console.log(person.address.pincode); // console.log(person.name);//john // console.log(person.age);//30 // console.log(person.address);//bangalore // let emp={ // Ename:"sahana", // sal:200, // add:"hyd" // }; // let emp2={ // ename1:"nibbi", // id1:456, // sal1:30000 // }; // console.log(Object.keys(emp));//it will return all the keys in the form of array // console.log(Object.values(emp));//it will return all the values in the form of array // console.log(Object.entries(emp));//it will return all the keys and values in the form of array // console.log(Object.assign({},emp,emp2));//it is used to merge the object // console.log(emp); // console.log(emp2); //!seal():-we can't able to add the properties,updation is possiable,we cant able to delete the properties,fetch is possiable. // let student={ // name:"neeraja", // id:123, // add:"Blr" // } // console.log(student); // Object.seal(student); // student.name="sakshi" // console.log(student.name);//updation is possible // delete student.id; // console.log(student.id);//we can't able to delete the property. // console.log(student); // student.section='a' // console.log(student);//we cant able to add the properties // console.log(student);//fetch is possible // console.log(Object.isSealed(student));//true //!freeze():-When the object is in freeze state,we can't able to add the properties,we can't able to delete properties,we can't able to update the properties,we can able to fetch the object. let student={ name:"neeraja", id:123, city:"blr" } console.log(student); Object.freeze(student); student.id=456; console.log(student.id);//we can't able to update the value. delete student.id console.log(student);//delete is also not possible student.section="A" console.log(student);//we cant able to add the property console.log(student);//we can fetch the object console.log(Object.isFrozen(student));//true
+    </script>
+</body>
+</html>
