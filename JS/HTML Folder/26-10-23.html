@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //! string
+        //1.length
+        let txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        console.log(txt)
+        let res=txt.length;
+        console.log(res)
+
+        //2.slice:- which is used to extracted the part of a string, that will be stored in the new string.
+        //syntax: 2 parameters
+        //slice(start,end)
+        let sl=txt.slice(0,5);
+        //let sl=txt.slice(-5,-1);
+        console.log(sl)
+
+        //3.sunstring:- It will not accept the negative values
+        let sub=txt.substring(1,5)
+        console.log(sub)
+        
+
+        //4.substr:- length of extracted part
+        //syntax: substr(start,length)
+        //let subst=txt.substr(0,5)
+        let subst=txt.substr(6,6)
+        console.log(subst) 
+
+        //5.replace:- it will replace a specified value with another value in a string.
+        let repl=txt.replace("XYZ",'xyz')
+        console.log(repl)
+
+        //6.trim:- it is used to remove whitespace from both the sides
+        let st="    Hello World!    "
+        console.log(st,"length is",st.length)
+        let tr=st.trim()
+        console.log(tr,"length is",tr.length)
+
+        //7.indexOf:-
+        console.log(txt)
+        console.log(txt.indexOf("W"))
+        console.log(txt.indexOf("w"))
+
+        //8.lastIndexOf:-
+        console.log(txt.lastIndexOf("BCDE"))
+        console.log(txt.lastIndexOf("ACDE"))
+
+        //9.includes:-
+        let= str="HelloWorld"
+        console.log(str.includes("World"))
+        console.log(str.includes("world"))
+
+        //10.repeat:-
+        var y="Js"
+        console.log(y.repeat(2))
+
+        //11.chatAt:-
+        var y="Hello World"
+        console.log(y.charAt(3))
+
+        //12.charCodeAt:-it will return the assci of the specified index.
+        console.log(y)
+        console.log(y.charCodeAt(1))
+        console.log(txt.charCodeAt(0))
+
+        /////////
+        //!split():-covert string to array
+        let a ="Machilipatnam"
+        console.log(a)
+        console.log(a.split(""))
+        
+        //!join:-covert arry to string
+        let arr=["a","b","c","d"]
+        console.log(arr)
+        console.log(arr.join(""))
+
+        //Wap to reverse the string
+        var z="BANGALORE"
+        console.log(z.reverse())
+    </script>
+</body>
+</html>
