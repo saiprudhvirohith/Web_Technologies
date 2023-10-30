@@ -33,3 +33,7 @@
 const z=document.createElement("h1")
 console.log(z);
 z.innerHTML="Bye..."
+
+const x=document.getElementById("demo")
+x.innerText="heading"
+console.log(x)
