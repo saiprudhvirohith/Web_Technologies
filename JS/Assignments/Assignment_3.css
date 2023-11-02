@@ -1,0 +1,20 @@
+input{
+    background-color: antiquewhite;
+}
+button{
+    background-color: violet;
+    width: 100px;
+    border-radius: 10px;
+}
+div{
+    border: 2px solid;
+    background-color: aqua;
+    text-align: center;
+    padding: 4%;
+}
+#output{
+    border: 2px dotted black;
+    background-color: chocolate;
+    font-style: italic;
+    text-align: center;
+}
