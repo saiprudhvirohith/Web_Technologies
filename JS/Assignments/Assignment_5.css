@@ -1,0 +1,33 @@
+div{
+    background-color: rosybrown;
+}
+#main-box{
+    border: 3px soild black;
+    width: 550px;
+    height: 300px;
+    display: flex;
+    padding: 5px;
+}
+#main-box img{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+}
+#right-box{
+    text-align: center;
+    margin: 5px;
+    float: right;
+}
+#photo1{
+    background-color: red;
+}
+#photo2{
+    background-color: black;
+    color: white;
+}
+#photo3{
+    background-color: blue;
+}
+#photo4{
+    background-color: green;
+}
